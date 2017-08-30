@@ -128,7 +128,7 @@ footer h4, footer h6 {
 .navbar-default {
     color: #ffffff;
     border-color: rgba(35,35,35,.05);
-    background-color: #ffffff;
+    background-color: #00023d;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -142,11 +142,11 @@ footer h4, footer h6 {
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #007FFF;
+    color: #ffffff;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #fff;
+    background-color: #00023d;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -235,7 +235,7 @@ header {
 }
 
 header .header-content {
-    margin-top: -5px;
+    margin-top: -3px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -363,6 +363,7 @@ h1{
 h2{
     font-family: 'Averia Serif Libre', cursive;
     color: #3f033c;
+    padding-bottom: 10px;
 }
 
 h3,h5{
@@ -421,6 +422,21 @@ p{
     margin-left: auto;
     max-width: 100%;
 }
+
+.map-container {
+    width: 100%;
+}
+.map-container iframe{
+    width: 100%;
+    display: block;
+    pointer-events: none;
+    position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+    pointer-events: auto;
+
+}
+
 
 
 
